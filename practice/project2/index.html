@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Dynamic Animations</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../reset.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<main>
+		<div id="canvas"></div>
+		<div id="controls">
+			<a href="#">Start</a>
+			<p>|</p>
+			<a href="#">Stop</a>	
+		</div>
+		<form action="" method="post">
+			<h1>Add a shape</h1>
+			<fieldset>
+				<h2>Type</h2>
+				<ul>
+					<li>
+						<label>
+							<input type="radio" name="shape" value="square" checked/>
+							Square
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="radio" name="shape" value="circle" />
+							Circle
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="radio" name="shape" value="star"/>
+							Star
+						</label>
+					</li>
+				</ul>
+			</fieldset>
+			<fieldset id="startCoordinates">
+				<h3>Starting Point</h3>
+				<input type="number" placeholder="x:" />
+				<input type="number" placeholder="y:">
+			</fieldset>
+			<fieldset id="endCoordinates">
+				<h3>Ending Point</h3>
+				<input type="number" placeholder="x:">
+				<input type="number" placeholder="y:">
+			</fieldset>
+			<fieldset id="duration">
+				<input type="number" placeholder="ms">
+			</fieldset>
+			<input type="submit" value="Add">
+		</form>		
+	</main>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>
