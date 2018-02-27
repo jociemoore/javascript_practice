@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Car Filter</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<header>
+		<h1>Buy Used Cars</h1>
+		<form>
+			<fieldset>
+				<input type="submit" value="Filter">
+			</fieldset>
+		</form>	
+	</header>
+
+	<main id="carContainer"></main>
+
+	<script id="filters" type="text/x-handlebars">
+		<label>
+			Make
+			<select name="Make">
+				<option value="All">All</option>
+				{{#each cars}}
+				{{> option this.make}}
+				{{/each}}
+			</select>
+		</label>
+		<label>
+			Model
+			<select name="Model"> All
+				<option value="All">All</option>
+				{{#each cars}}
+				{{> option this.model}}
+				{{/each}}
+			</select>
+		</label>
+		<label>
+			Price
+			<select name="Price">
+				<option value="All">All</option>
+				{{#each cars}}
+				{{> option this.price}}
+				{{/each}}
+			</select>
+		</label>
+		<label>
+			Year
+			<select name="Year">
+				<option value="All">Any</option>
+				{{#each cars}}
+				{{> option this.year}}
+				{{/each}}
+			</select>
+		</label>
+	</script>
+
+	<script id="option" type="text/x-handlebars" data-type="partial">
+		<option value="{{this}}">{{this}}</option>
+	</script>
+
+	<script id="carTiles" type="text/x-handlebars">
+		{{#each cars}}
+		{{> carTile}}
+		{{/each}}
+	</script>
+
+	<script id="carTile" type="text/x-handlebars" data-type="partial">
+		<div class="car">
+			<div>
+				<img src="{{image}}" alt="{{year}} {{make}} {{model}}" />
+			</div>
+			<h2>{{make}} {{model}}</h2>
+			<p>Year: {{year}}</p>
+			<p>Price: ${{price}}</p>
+			<button>Buy</button>		
+		</div>
+	</script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>
