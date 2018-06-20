@@ -1,8 +1,8 @@
 # 230 DOM and Asynchronous Programming with JavaScript: Lesson #2
 
 Topics covered in the lesson include:
-* setTimeout
-* setInterval
+* setTimeout Method
+* setInterval Method
 * Page Lifecycle Events
 * User Events
 * Event Listeners
