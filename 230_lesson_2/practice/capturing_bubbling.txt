@@ -1,0 +1,45 @@
+------------
+Question #1
+------------
+
+I predict that the code will alert the following when #4 is clicked:
+
+'window'
+'body'
+'d1 pick div'
+'d2 pick section'
+'d4 pick main'
+
+
+Answer:
+'d1 pick div'
+'d2 pick section'
+'d4 pick main'
+
+
+
+
+
+
+
+
+
+
+
+
+------------
+Question #2
+------------
+
+If we add the following line to the code:
+
+document.querySelector('.d3').addEventListener('click', highlightThis, false);
+
+These are the alerts:
+
+'d1 pick div' --> capturing
+'d2 pick section' --> capturing
+'d4 pick main' --> target
+'d3 pick div' --> bubbling phase
+
+
