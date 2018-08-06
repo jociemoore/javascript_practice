@@ -1,0 +1,19 @@
+article + article {
+	display: none;
+}
+
+li {
+	float: left;
+	margin-right: 40px;
+	list-style: none;
+}
+
+ul {
+	padding-left: 0;
+}
+
+ul:after {
+	content: '';
+	display: block;
+	clear: both;
+}
