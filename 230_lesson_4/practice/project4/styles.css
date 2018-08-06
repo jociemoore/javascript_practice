@@ -1,0 +1,131 @@
+body {
+	font-family: Times, 'Times New Roman', serif;
+	background-color: #f0f0f0;
+	background-image: url('images/background.svg');
+}
+
+main {
+	background: #fff;
+	width: 840px;
+	padding: 20px;
+	margin: 10px auto;
+}
+
+div {
+	margin-bottom: 30px;
+}
+
+section {
+	margin-bottom: 30px;
+}
+
+section:first-of-type {
+	height: 520px;
+	background: url('images/tree.png') no-repeat center;
+	position: relative;
+	overflow: hidden;
+}
+
+p,
+a {
+	font-size: 20px;
+	margin-bottom: 50px;
+}
+
+h1,
+span {
+	margin-right: 6px;
+	padding: 5px;
+	display: inline-block;
+}
+
+h1 {
+	padding-left: 0;
+	font-size: 24px;
+	width: 100px;
+	vertical-align: top;
+}
+
+span {
+	font-size: 26px;
+	border-bottom: 3px solid #000;
+	height: 45px;
+	width: 30px;
+	text-align: center;
+	vertical-align: bottom;
+	text-transform: uppercase;
+}
+
+#apples {
+	background-image: url('images/apples.png');
+	background-repeat: no-repeat;
+	height: 322px;
+	width: 374px;
+	position: absolute;
+	top: 20px;
+	left: 50%;
+	margin: 0 0 0 -168px;
+}
+
+#messages {
+	padding: 40px 0;
+}
+
+#messages:empty {
+	display: none;
+}
+
+.won {
+	background-color: #0066cc;
+	animation: won 3s;
+}
+
+.lost {
+	background-color: #b00b00; 
+	animation: lost 3s;
+}
+
+@keyframes won {
+	0% {
+		background-color: #f0f0f0;
+	}
+	100% {
+		background-color: #0066cc;
+	}
+}
+
+@keyframes lost {
+	0% {
+		background-color: #f0f0f0;
+	}
+	100% {
+		background-color: #b00b00;
+	}
+}
+
+.guess0 {
+	background-position: 0 0;
+}
+
+.guess1 {
+	background-position: 0 -322px;
+}
+.guess2 {
+	background-position: 0 -644px;
+}
+
+.guess3 {
+	background-position: 0 -966px;
+}
+
+.guess4 {
+	background-position: 0 -1288px;
+}
+
+.guess5 {
+	background-position: 0 -1610px;
+}
+
+.guess6 {
+	background-position: 0 -1932px;
+}

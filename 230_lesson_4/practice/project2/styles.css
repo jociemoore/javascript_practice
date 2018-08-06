@@ -1,0 +1,86 @@
+html {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	background: #780E24;
+	padding: 10px;
+}
+
+main {
+	background: #fff;
+	margin: 0px auto;
+	padding: 25px;
+	width: 860px;
+}
+
+h1 {
+	font-size: 28px;
+	margin-bottom: 20px;
+}
+
+h2 {
+	font-size: 22px;
+	margin-bottom: 20px;
+}
+
+h3 {
+	font-weight: normal;
+	margin-bottom: 5px;
+}
+
+fieldset {
+	margin-bottom: 20px;
+}
+
+ul {
+	margin-left: 40px;
+}
+
+li {
+	margin-bottom: 3px;
+}
+
+input[type=number] {
+	height: 30px;
+	width: 70px;
+	padding-left: 5px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+}
+
+#canvas {
+	height: 600px;
+	background: linear-gradient(#fff 0%, #0167CC 100%);
+	border: 1px solid #ccc;
+	margin-bottom: 15px;
+	position: relative;
+	overflow: hidden;
+}
+
+#canvas > div {
+	height: 30px;
+	width: 30px;
+	position: absolute;
+	background: #dde388;
+}
+
+#canvas .circle {
+	border-radius: 100%
+}
+
+#canvas .star {
+	background: transparent url("star.png");
+	background-size: contain;
+}
+
+#controls a,
+#controls p {
+	float: left;
+	margin-right: 5px;
+}
+
+#controls:after {
+	content: '';
+	display: block;
+	clear: both;
+	margin-bottom: 30px;
+}
