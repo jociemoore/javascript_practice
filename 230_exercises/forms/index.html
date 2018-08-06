@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Forms and Form Validation</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<div>
+		<h1>Sign Up Form</h1>
+		<form action="#" method="POST" novalidate>
+			<label>
+				<dt>First Name</dt>
+				<dd><input type="text" name="FirstName" pattern = "[a-zA-z\s]+" required /></dd>
+			</label>
+			<label>
+				<dt>Last Name</dt>
+				<dd><input type="text" name="LastName" pattern = "[a-zA-z\s]+" required /></dd>
+			</label>
+			<label>
+				<dt>Email</dt>
+				<dd><input type="text" name="Email" placeholder="someone@example.com" required pattern=".+@.+"/></dd>
+			</label>
+			<label>
+				<dt>Password</dt>
+				<dd><input type="password" name="Password" required /></dd>
+			</label>
+			<label>
+				<dt>Phone Number</dt>
+				<dd><input type="tel" name="PhoneNumber" placeholder="111-222-3333" pattern="\d{3}-\d{3}-\d{4}"/></dd>
+			</label>
+			<label>
+				<dt>Credit Card</dt>
+				<dd>
+					<input type="text" name="CreditCard" pattern="\d{4}" maxlength="4" /> 
+					<span>-</span>
+					<input type="text" name="CreditCard" pattern="\d{4}" maxlength="4"/>
+					<span>-</span>
+					<input type="text" name="CreditCard" pattern="\d{4}" maxlength="4"/>
+					<span>-</span>
+					<input type="text" name="CreditCard" pattern="\d{4}" maxlength="4"/>
+				</dd>
+			</label>
+			<input type="submit"  value="Sign Up" />
+		</form>
+		
+		<section id="serializedData">
+			<h2>Serialized Form</h2>
+		</section>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,92 @@
+html {
+	background: #52BE43;
+	padding: 50px 0 50px 0;
+	font-family: Georgia, serif;
+	font-size: 16px;
+}
+
+form {
+	margin-bottom: 25px;
+}
+
+div {
+	margin: 0 auto;
+	width: 800px;
+}
+h1 {
+	color: #fff;
+	font-size: 30px;
+	margin: 25px 0;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+form, section {
+	background: #fff;
+	padding: 20px;
+	border-radius: 5px;
+}
+
+dt {
+	margin: 20px 0 10px 0;
+}
+
+dd {
+	display: inline-block;
+}
+
+input {
+	width: 300px;
+	height: 35px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	padding: 0 10px;
+	font-size: 16px;
+}
+
+
+input[type=submit] {
+	margin-top: 20px;
+	width: 90px;
+	background: #52BE43;
+	color: #fff;
+	border: none;
+	font-weight: 800;
+	display: block;
+}
+
+input[name=CreditCard] {
+	width: 65px;
+}
+
+section {
+	paddding: 20px;
+}
+
+p {
+	word-break: break-all;
+	font-family: monospace;
+	margin-top: 20px;
+}
+
+.invalid {
+	border-color: #dd0000;
+}
+
+.submitError,
+.fieldError {
+	color: #dd0000;
+}
+
+.fieldError {
+	display: inline-block;
+	margin-left: 35px;
+}
+
+.focus {
+	border-color: #52BE43;
+	outline: 0;
+}
+
