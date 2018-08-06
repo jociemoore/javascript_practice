@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Grocery List</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../reset.css">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" media="print" href="print-styles.css">
+</head>
+<body>
+	<main>
+		<form action="" method="post">
+			<fieldset>
+				<h2>Add an item</h2>
+				<label>
+					Item name
+					<input type="text" name="item-name">
+				</label>
+				<label>
+					Quantity
+					<input id="quantity" type="text" name="quantity">
+				</label>
+				<input type="submit" value="Add">
+			</fieldset>
+		</form>
+
+		<section>
+			<h1>Groceries</h1>
+			<ul></ul>
+		</section>
+	</main>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>
