@@ -1,0 +1,78 @@
+html {
+	font-family: serif;
+}
+
+h1 {
+	font-size: 30px;
+}
+
+header {
+	background: #E29921;
+	color: #fff;
+	padding: 20px;
+	border-radius: 5px;
+}
+
+form select {
+	border: 1px solid #fff;
+	background: #E29921;
+	color: #fff;
+	height: 30px;
+	width: 80px;
+	margin-right: 10px;
+}
+
+input[type="submit"],
+.car button {
+	height: 30px;
+	width: 50px;
+	border-radius: 5px;
+}
+
+input[type="submit"] {
+	background: #E29921;
+	border: 1px solid #fff;
+	color: #fff;
+	margin-left: 20px;
+}
+
+fieldset {
+	margin-top: 20px;
+}
+
+main {
+	padding: 10px;
+}
+
+img {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+h2,
+p,
+img {
+	margin-bottom: 10px;
+}
+
+.car div {
+	width: 200px;
+	height: 135px;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+.car {
+	float: left;
+	margin: 12px;
+}
+
+.car button {
+	background: #E29921;
+	color: #fff;
+	font-family: serif;
+	font-size: 16px;
+	border: 0;
+	cursor: pointer;
+}

@@ -1,0 +1,80 @@
+html {
+	background: #226543;	
+	padding: 50px 30px;
+	font-family: 'Georgia', serif;
+	font-size: 16px;
+}
+
+h1 {
+	color: white;
+	font-size: 30px;
+}
+
+ul {
+	margin: 20px 50px;
+}
+
+li {
+	background: #fff;
+	padding: 20px;
+	width: 600px;
+	border-radius: 5px;
+	margin-top: 20px;
+}
+
+a {
+	background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Red_X.svg/100px-Red_X.svg.png") no-repeat center/20px;
+	float: right;
+	width: 20px;
+	height: 20px;
+	text-indent: 9000px;
+	cursor: pointer;
+}
+
+button {
+	border-radius: 5px; 
+	color: #fff;
+	float: right;
+	margin-left: 5px;
+	width: 60px;
+	height: 30px;
+	border: none;
+	font-family: Georgia, serif;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+#modal-container {
+	background: rgba(0,0,0,0.35);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: none;
+}
+
+.modal {
+	background: #fff;
+	border-radius: 5px;
+	padding: 10px 20px;
+	width: 500px;
+	position: absolute;
+	left: 50%;
+	margin: 150px -250px;
+}
+
+.modal p {
+	margin: 30px 0 40px 0;
+}
+
+.noBtn {
+	background: #289F37;
+}
+
+.yesBtn {
+	background: #9F1331;
+}
+
+
+
