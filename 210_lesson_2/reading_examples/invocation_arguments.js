@@ -1,0 +1,61 @@
+///////////////////////////////////////
+// Invoking functions
+///////////////////////////////////////
+
+function startle() {
+  console.log('Yikes!');
+}
+
+startle();
+
+// logs Yikes!
+
+
+
+
+///////////////////////////////////////
+// Invoking functions with arguments
+///////////////////////////////////////
+
+
+function takeTwo(a, b) {
+  console.log(a);
+  console.log(b);
+  console.log(a + b);
+}
+
+takeTwo(1, 2);
+
+// logs 1
+// logs 2
+// logs 3
+
+
+
+
+
+
+///////////////////////////////////////
+// Invoking functions with less arguments
+///////////////////////////////////////
+
+take(1);
+
+// logs 1
+// logs undefined
+// logs NaN
+
+
+
+
+///////////////////////////////////////
+// Invoking functions with more arguments
+///////////////////////////////////////
+
+
+takeTwo(1, 2, 4);
+
+// logs 1
+// logs 2
+// logs 3
+
